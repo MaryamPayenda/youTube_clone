@@ -1,10 +1,19 @@
 /* youtube font font-family: 'Roboto', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  --color-gray: #e5e5e5;
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* menue and search bar
+ */
 .header {
   display: flex;
   justify-content: space-between;
@@ -14,13 +23,14 @@
   display: flex;
   justify-content: left;
   align-items: left;
-  padding: 0 0 0 4px;
+  padding: 0 0 0 27px;
 
   height: 20px;
 }
 .youtube-logo {
-  height: 40px;
+  height: 35px;
   margin-left: 2px;
+  align-items: center;
   /* padding: 0 0 0 20px; */
 }
 .search-bar {
@@ -35,6 +45,7 @@
   /* padding: -4rem; */
   border: 1px solid lightgray;
   border-radius: 1px;
+  align-items: center;
   /* border-top-right-radius: 0;
   border-bottom-right-radius: 0; */
 }
@@ -55,11 +66,47 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.52rem;
+  padding-right: 20px;
 }
 .menu-channel-icon {
   border-radius: 50%;
   width: 36px;
   height: 36px;
   background-color: red;
+  align-items: center;
+}
+
+/* side bar */
+
+.main-body {
+  height: 100vh;
+}
+.catagories {
+  width: 250px;
+  height: 100%;
+  /* padding: 10px 4px; */
+}
+.catagories-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 10px 4px;
+
+  /* height: 15px; */
+}
+.category {
+  width: 100%;
+  font-size: 12px;
+  margin-left: 14px;
+  padding: 5px;
+  cursor: pointer;
+}
+.category:hover {
+  background: var(--color-gray);
+}
+.icon {
+  margin-right: 18px;
+  height: 18px;
 }
