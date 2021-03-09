@@ -1,40 +1,65 @@
 /* youtube font font-family: 'Roboto', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+}
+.Humburger-menu {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 0 0 0 4px;
+
+  height: 20px;
 }
 .youtube-logo {
-  height: 30px;
+  height: 40px;
+  margin-left: 2px;
+  /* padding: 0 0 0 20px; */
 }
 .search-bar {
   display: flex;
-  flex-grow: 1;
-  margin: 0 2rem 0 4rem;
+  /* flex-grow: 1; */
+  margin: 0 10rem 0 20rem;
+  width: 30rem;
 }
 .search-input {
   width: 100%;
   font-size: inherit;
-  padding: -4rem;
-  border: 1px solid #777;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  /* padding: -4rem; */
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  /* border-top-right-radius: 0;
+  border-bottom-right-radius: 0; */
 }
 .search-btn {
   display: flex;
   align-items: center;
   padding: 0 1.25rem;
-  border: 1px solid #777;
+  border: 1px solid lightgray;
   background-color: #f8f8f8;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  cursor: pointer;
 }
-.menu-icon {
+.search-btn:hover {
+  background-color: #f0f0f0;
+}
+.menu-icons {
   display: grid;
   grid-template-columns: repeat(4, auto);
   align-items: center;
   gap: 1.5rem;
+}
+.menu-channel-icon {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: red;
 }
