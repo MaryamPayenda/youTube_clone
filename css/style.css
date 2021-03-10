@@ -98,7 +98,7 @@ body {
   border: none;
 }
 .catagories {
-  width: 13rem;
+  width: 14.9rem;
   display: block;
   /* background-color: lightgray; */
   /* border: 1px green solid; */
@@ -132,7 +132,7 @@ body {
 
 hr {
   border: 0.5px lightgray solid;
-  width: 13rem;
+  width: 15rem;
 }
 
 h3 {
