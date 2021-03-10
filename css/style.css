@@ -197,3 +197,25 @@ h1 {
   width: 120px;
   border: none;
 }
+
+.Navigation {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 35px;
+}
+
+.Navigation a {
+  color: #666565;
+  font-size: 13px;
+  padding: 0px 25px 10px;
+  text-decoration: none;
+}
+
+.video-line {
+  border-bottom: var(--color-gray) solid 2px;
+}
+
+.Navigation a:hover {
+  color: black;
+}
