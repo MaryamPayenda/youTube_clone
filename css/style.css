@@ -124,9 +124,9 @@ hr {
 .videos {
   border: 2px green solid;
 }
-.youtube_profile {
+/* .youtube_profile {
   display: block;
-}
+} */
 .header-img {
   width: 50%;
   height: 50%;
@@ -138,7 +138,7 @@ h1 {
   display: block;
   height: 160px;
   margin-top: -4px;
-  background-color: var(--chanel_info-gray);
+  background-color: rgb(240, 240, 240);
 }
 
 .chanel-top {
@@ -218,4 +218,8 @@ h1 {
 
 .Navigation a:hover {
   color: black;
+}
+
+.gallery {
+  background-color: lightgray;
 }
