@@ -220,6 +220,30 @@ h1 {
   color: black;
 }
 
-.gallery {
-  background-color: lightgray;
+.video-container {
+  display: flex;
+  flex-direction: column;
 }
+.thumbnail {
+  position: relative;
+  display: flex;
+}
+.thumbnail::before {
+  content: attr(data-duration);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: red;
+  right: 5px;
+  bottom: 5px;
+  padding: 0.1em 0.3em;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+}
+.thumbnail-img {
+  width: 15%;
+  height: 15%;
+}
+/* .video-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, ifr));
+} */
