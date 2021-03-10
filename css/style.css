@@ -15,23 +15,33 @@ body {
 /* menue and search bar
  */
 .header {
+  /* position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.menu {
+  width: 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .Humburger-menu {
-  display: flex;
+  /* display: flex;
   justify-content: left;
-  align-items: left;
-  padding-left: 27px;
-
-  height: 20px;
+  align-items: left; */
+  padding-left: 25px;
+  height: 28px;
 }
 .youtube-logo {
   height: 40px;
   margin-left: 0px;
-  align-items: left;
-  justify-content: left;
+  /* align-items: left;
+  justify-content: left; */
   /* padding: 0 0 0 20px; */
 }
 .search-bar {
@@ -131,9 +141,6 @@ h3 {
   margin-left: 15px;
   margin-bottom: 4px;
 }
-/* .youtube_profile {
-  display: block;
-} */
 
 /* header part */
 .header-img {
@@ -147,7 +154,7 @@ h1 {
   display: block;
   height: 160px;
   margin-top: -4px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(249, 249, 249);
 }
 
 .chanel-top {
@@ -230,7 +237,7 @@ h1 {
 }
 /* video gallery */
 .video-section {
-  background-color: rgb(221, 219, 219);
+  background-color: rgb(241, 241, 241);
 }
 .video-container {
   display: flex;
@@ -256,7 +263,7 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem 1rem;
   padding: 3rem 0;
-  margin: 0 1.5rem;
+  /* margin: 0 1.5rem; */
   padding: 4rem 7rem;
 
   /* border: 4px solid #ccc; */
