@@ -31,35 +31,25 @@ body {
   align-items: center;
 }
 .Humburger-menu {
-  /* display: flex;
-  justify-content: left;
-  align-items: left; */
   padding-left: 25px;
   height: 28px;
 }
 .youtube-logo {
   height: 40px;
   margin-left: 0px;
-  /* align-items: left;
-  justify-content: left; */
-  /* padding: 0 0 0 20px; */
 }
 .search-bar {
   /* position: fixed; */
   display: flex;
-  /* flex-grow: 1; */
   margin: 0 10rem 0 20rem;
   width: 30rem;
 }
 .search-input {
   width: 100%;
   font-size: inherit;
-  /* padding: -4rem; */
   border: 1px solid lightgray;
   border-radius: 1px;
   align-items: center;
-  /* border-top-right-radius: 0;
-  border-bottom-right-radius: 0; */
 }
 .search-btn {
   display: flex;
@@ -73,7 +63,6 @@ body {
   background-color: #f0f0f0;
 }
 .menu-icons {
-  border: 2px red solid;
   display: grid;
   grid-template-columns: repeat(4, auto);
   align-items: center;
@@ -93,12 +82,8 @@ body {
   display: flex;
   width: 100%;
   border: none;
-  /* height: 100vh; */
 }
 .catagories {
-  /* background-color: lightgray; */
-  /* border: 1px green solid; */
-  /* padding: 10px 4px; */
   width: 14.9rem;
   display: block;
   height: 100%;
@@ -197,7 +182,6 @@ h1 {
 }
 
 .Navigation {
-  /* border: 2px red solid; */
   width: 70%;
   margin: 0 auto;
   align-items: left;
