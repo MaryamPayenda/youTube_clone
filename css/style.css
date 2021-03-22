@@ -30,10 +30,28 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.Humburger-menu {
+/* .Humburger-menu {
   padding-left: 25px;
   height: 28px;
+} */
+
+.hamburger {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 2rem;
+  height: 1.2rem;
+  padding-left: 25px;
 }
+.mobileName {
+  display: none;
+}
+.hamburger div {
+  width: 1.3rem;
+  border: 1px rgb(138, 130, 130) solid;
+}
+
 .youtube-logo {
   height: 40px;
   margin-left: 0px;
@@ -257,4 +275,50 @@ h1 {
   margin-bottom: 0.5rem;
   text-decoration: none;
   color: black;
+}
+
+/* mobile design */
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100vh;
+  }
+
+  .youtube-logo {
+    height: 15rem;
+    margin-left: 20px;
+    width: 20rem;
+  }
+  .mobile-Name {
+    font-size: 4rem;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu-icons,
+  .search-input,
+  .mic-img {
+    display: none;
+  }
+  .catagories {
+    display: none;
+  }
+  .search-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* padding: 0 1.25rem; */
+    border: 5px solid red;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    /* margin: 2rem 8rem 0 30rem; */
+    margin-left: 30rem;
+    margin-top: 2rem;
+  }
 }

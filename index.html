@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Responsive Design" />
+    <meta name="keyword" content="html,css, responsive" />
+    <meta name="author" content="Maryam Payenda" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtubes</title>
+    <title>Youtubes Clone</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -14,27 +19,38 @@
   <body>
     <header class="header">
       <div class="menu"> 
-        <a href="#">
-          <img
+       <!-- <a href="#">
+           <img
             src="./img/Humburger-menu.svg"
             alt="Humburger menu"
             class="Humburger-menu"
-        /></a>
-    
-           <a href="#">
+        /></a> -->
+
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+
+      <a href="#">
         <img
           src="./img/YouTube-Logo.png"
           alt="Youtube-Logo"
           class="youtube-logo"
       /></a>
+      <div class="mobile-Name">SelenaGomes</div>
+
+
 </div>
+
+
 
       <form class="search-bar">
         <input type="search" class="search-input" placeholder="Search" />
         <button type="submit" class="search-btn">
           <img src="./img/search.svg" alt="Search" />
         </button>
-        <img src="./img/mic.svg" alt="mic" />
+        <img src="./img/mic.svg" alt="mic" class="mic-img" />
       </form>
 
       <div class="menu-icons">
@@ -366,5 +382,18 @@
         </div>
       
     </div>
+
+    <script>
+          let clicked = false;
+        document.querySelector('.hamburger').addEventListener("click",()=>{
+        clicked= !clicked;
+            console.log(clicked);
+            if(clicked){
+                document.querySelector('catagories').style.cssText = "display: block; position: absolute;top: 3vh;left:0;z-index: 1;"
+            } else{
+                document.querySelector('.catagories').style.cssText = "display: none;"
+            }
+        })
+    </script>
   </body>
 </html>
